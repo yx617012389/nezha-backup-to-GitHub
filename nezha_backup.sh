@@ -48,6 +48,9 @@ git ls-files | grep 'nezha-backup-.*\.tar\.gz' | while read -r file; do
   fi
 done
 
+git config user.email "you@example.com"                    # ⚠️ 替换为你的 GitHub 邮箱
+git config user.name "Your Name"                           # ⚠️ 替换为你的 GitHub 用户名
+
 # 创建新归档
 tar -czf "$ARCHIVE_NAME" "$BACKUP_DIR"
 
