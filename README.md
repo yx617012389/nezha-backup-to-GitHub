@@ -62,7 +62,7 @@ BACKUP_DIR="/opt/nezha"
 GIT_REPO_DIR="/root/nezha-backup"
 GIT_REMOTE="origin"
 GIT_BRANCH="main"
-GITHUB_REPO="github.com/你的用户名/nezha-backup.git"       # ⚠️ 替换为你的仓库地址
+GITHUB_REPO="github.com/你的用户名/nezha-backup.git"         # ⚠️ 替换为你的仓库地址
 GITHUB_TOKEN="ghp_xxx你的GitHubToken"                       # ⚠️ 替换为你的 GitHub Token
 MAX_DAYS=7
 
@@ -104,6 +104,9 @@ git ls-files | grep 'nezha-backup-.*\.tar\.gz' | while read -r file; do
     git rm -f "$file"
   fi
 done
+
+git config user.email "you@example.com"                    # ⚠️ 替换为你的 GitHub 邮箱
+git config user.name "Your Name"                           # ⚠️ 替换为你的 GitHub 用户名
 
 # 创建新归档
 tar -czf "$ARCHIVE_NAME" "$BACKUP_DIR"
