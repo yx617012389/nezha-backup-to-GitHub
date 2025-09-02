@@ -58,11 +58,11 @@ vim /root/nezha_backup.sh
 #!/bin/bash
 
 ### ====== 需要修改的地方 ======
-GITHUB_USER="yx617012389"        # 修改成你的 GitHub 用户名
+GITHUB_USER="XXXXX"        # 修改成你的 GitHub 用户名
 GITHUB_REPO="nezha-backup"       # 修改成你的仓库名
 GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxxx"  # 修改成你的 GitHub Token（需要有 repo 权限）
-BOT_TOKEN="7673409513:AAFzIj0WwEUSX3d__AVrlRuOosr3lZegc-c"   # 修改成你的 Telegram Bot Token
-CHAT_ID="7032984555"             # 修改成你的 Telegram Chat ID
+BOT_TOKEN="XXXXX:XXXXXXXXXX"   # 修改成你的 Telegram Bot Token
+CHAT_ID="XXXXX"             # 修改成你的 Telegram Chat ID
 BACKUP_DIR="/opt/nezha"          # Nezha 安装路径
 KEEP_DAYS=7                      # 保留天数（超过就自动删除）
 ### ====== 后面还有两处需要修改的地方 ======
