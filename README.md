@@ -1,7 +1,7 @@
 # **此脚本为 Nezha面板v1 每日自动备份到 GitHub 并通过 Telegram 通知**
 
 操作环境：Debian11 VPS (nezha非docker安装)
-> **目标**：每天早上 6:00（北京时间）自动  
+> **目标**：每天早上 3:00 自动  
 > 1. 打包 `/opt/nezha` 为 `.tar.gz`  
 > 2. 上传到 GitHub 仓库  
 > 3. 自动清理 7 天前的旧备份  
